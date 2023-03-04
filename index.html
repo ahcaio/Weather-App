@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7a0x7AmfS1-3hS-XWRzLvbFhEE-jl6_4&libraries=places"></script>
     <title>Weather App</title>
     <link rel="icon" href="assets/icon.png">
 </head>
@@ -18,7 +19,7 @@
     <div class="container">
         <div class="search-box">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Buscar cidade ou país">
+            <input type="text" placeholder="Buscar cidade ou país" id="autocomplete" >
             <button class="fa-solid fa-magnifying-glass"></button>
         </div>
 
@@ -54,6 +55,24 @@
 
     <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+    <script>
+        function initAutocomplete() {
+          var input = document.getElementById('autocomplete');
+          var options = {
+            componentRestrictions: { types: 'country', 'city' }
+          };
+          var autocomplete = new google.maps.places.Autocomplete(input, options);
+          autocomplete.addListener('place_changed', function() {
+            var place = autocomplete.getPlace();
+            var latitude = place.geometry.location.lat();
+            var longitude = place.geometry.location.lng();
+            var city = place.address_components[0].long_name;
+            document.getElementById('search').value = city;
+            getWeather(latitude, longitude);
+          });
+        }
+      </script>
 </body>
 
 </html>

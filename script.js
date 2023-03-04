@@ -5,10 +5,17 @@ const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 const input = document.querySelector('.search-box input');
 
+
+
+function initAutocomplete() {
+    const input = document.querySelector('#autocomplete');
+    const autocomplete = new google.maps.places.Autocomplete(input);
+  }
+
 function searchWeather() {
 
     const APIKey = '7e8ceaea20f6ffba42c9e95827db3b58';
-    const city = document.querySelector('.search-box input').value;
+    const city = document.querySelector('#autocomplete').value;
 
     if (city === '')
         return;
@@ -85,4 +92,9 @@ input.addEventListener('keydown', (event) => {
 search.addEventListener('click', () => {
     searchWeather();
 });
+
+window.addEventListener('load', () => {
+    initAutocomplete();
+    searchWeather();
+  });
 

@@ -37,7 +37,7 @@ body{
 .search-box input{
     color: #20262E;
     width: 80%;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 500;
     text-transform: capitalize;
     padding-left: 32px;
@@ -181,4 +181,32 @@ body{
         scale: 1;
         opacity: 1;
     }
+}
+
+.pac-container {
+    width: 300px;
+    height: min-content;
+    padding: 0 10px 10px 10px;
+    font-size: 16px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+}
+
+.pac-item{
+    color: #20262E;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pac-item-query{
+    color: #20262E;
+    font-family: 'Roboto', sans-serif;
+}
+.pac-item:hover{
+    border-radius: 16px;
+    background: #dff6ff;
+}
+
+.pac-item-selected{
+    border-radius: 16px;
+    background: #dff6ff;
 }
