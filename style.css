@@ -1,3 +1,8 @@
+:root{
+    --cor-primaria: #1F1D36;
+    --cor-secundaria: #BFEAF5;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +16,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #20262E;
+    background: var(--cor-primaria);
 }
 
 .container{
@@ -35,7 +40,7 @@ body{
 }
 
 .search-box input{
-    color: #20262E;
+    color: var(--cor-primaria);
     width: 80%;
     font-size: 20px;
     font-weight: 500;
@@ -46,7 +51,7 @@ body{
 .search-box input::placeholder{
     font-size: 20px;
     font-weight: 500;
-    color: #20262E;
+    color: var(--cor-primaria);
     text-transform: initial;
 }
 
@@ -54,21 +59,22 @@ body{
     cursor: pointer;
     width: 50px;
     height: 50px;
-    color: #20262E;
-    background: #dff6ff;
+    color: var(--cor-primaria);
+    background: var(--cor-secundaria);
     border-radius: 50%;
-    font-size: 22px;
+    font-size: 18px;
     transition: 0.4s ease;
 }
 
+
 .search-box button:hover{
     color: #fff;
-    background: #20262E;
+    background: var(--cor-primaria);
 }
 
 .search-box i{
     position: absolute;
-    color: #20262E;
+    color: var(--cor-primaria);
     font-size: 28px;
 }
 
@@ -83,7 +89,7 @@ body{
 
 .weather-box .temperature{
     position: relative;
-    color: #20262E;
+    color: var(--cor-primaria);
     font-size: 4rem;
     font-weight: 800;
     margin-top: 30px;
@@ -97,7 +103,7 @@ body{
 }
 
 .weather-box .description{
-    color: #20262E;
+    color: var(--cor-primaria);
     font-size: 22px;
     font-weight: 500;
     text-transform: capitalize;
@@ -128,20 +134,20 @@ body{
 }
 
 .weather-details i{
-    color: #20262E;
+    color: var(--cor-primaria);
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
 }
 
 .weather-details span{
-    color: #20262E;
+    color: var(--cor-primaria);
     font-size: 22px;
     font-weight: 500;
 }
 
 .weather-details p{
-    color: #20262E;
+    color: var(--cor-primaria);
     font-size: 14px;
     font-weight: 500;
 }
@@ -160,7 +166,7 @@ body{
 }
 
 .not-found p{
-    color: #20262E;
+    color: var(--cor-primaria);
     font-size: 22px;
     font-weight: 500;
     margin-top: 12px;
@@ -186,27 +192,28 @@ body{
 .pac-container {
     width: 300px;
     height: min-content;
-    padding: 0 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
     font-size: 16px;
     border-radius: 16px;
     border: 1px solid #ccc;
 }
 
 .pac-item{
-    color: #20262E;
+    color: var(--cor-primaria);
     font-family: 'Roboto', sans-serif;
+    border: none;
 }
 
 .pac-item-query{
-    color: #20262E;
+    color: var(--cor-primaria);
     font-family: 'Roboto', sans-serif;
 }
 .pac-item:hover{
     border-radius: 16px;
-    background: #dff6ff;
+    background: var(--cor-secundaria);
 }
 
 .pac-item-selected{
     border-radius: 16px;
-    background: #dff6ff;
+    background: var(--cor-secundaria);
 }
