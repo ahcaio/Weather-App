@@ -60,7 +60,7 @@
         function initAutocomplete() {
           var input = document.getElementById('autocomplete');
           var options = {
-            componentRestrictions: { types: 'country', 'city' }
+            componentRestrictions: { types: 'country', 'cities' }
           };
           var autocomplete = new google.maps.places.Autocomplete(input, options);
           autocomplete.addListener('place_changed', function() {
