@@ -25,11 +25,11 @@ O objetivo será construir um aplicativo que fornece informações de clima em t
 - HTML
 
 # Como executar o projeto
+## Link do site
  <a href="https://ahcaio.github.io/Weather-App/"> Weather App </a>
 
-
+## Clonar repositório
 ```bash
-# clonar repositório
 git clone https://github.com/ahcaio/Weather-App
 ```
 
