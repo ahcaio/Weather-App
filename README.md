@@ -1,5 +1,8 @@
 # Weather-App
 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/ahcaio/Weather-App/blob/main/LICENSE)
+
+
 ## Objetivo
 O objetivo será construir um aplicativo que fornece informações de clima em tempo real através das APIs OpenWeather e Place AutoComplete
 
