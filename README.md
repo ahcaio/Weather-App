@@ -4,7 +4,10 @@
 O objetivo será construir um aplicativo que fornece informações de clima em tempo real através das APIs OpenWeather e Place AutoComplete
 
 ## Layout
-<img src="https://github.com/ahcaio/Weather-App/blob/main/assets/Captura%20de%20ecr%C3%A3%2004.03.2023%20%C3%A0s%2015.22.43%20PM.png" width="500px" />  
+
+<img src="https://github.com/ahcaio/Weather-App/blob/main/assets/tela.gif" width="500px" />  
+
+
 
 ## O que eu aprendi?
 
